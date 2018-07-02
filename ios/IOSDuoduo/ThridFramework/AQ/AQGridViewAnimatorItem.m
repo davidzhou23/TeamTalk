@@ -38,11 +38,17 @@
 {
 	if ( [obj isKindOfClass: [self class]] == NO )
 	{
-		if ( (void *)objc_unretainedPointer(self) < (void *)objc_unretainedPointer(obj) )
-			return ( NSOrderedAscending );
-		if ( (void *)objc_unretainedPointer(self) > (void *)objc_unretainedPointer(obj) )
-			return ( NSOrderedDescending );
-		return ( NSOrderedSame );			// how ??!?!?
+//        if ( (void *)objc_unretainedPointer(self) < (void *)objc_unretainedPointer(obj) )
+//            return ( NSOrderedAscending );
+//        if ( (void *)objc_unretainedPointer(self) > (void *)objc_unretainedPointer(obj) )
+//            return ( NSOrderedDescending );
+//        return ( NSOrderedSame );            // how ??!?!?
+        
+        if ( (void *)(__bridge   void *)(self) < (void *)(__bridge   void *)(obj) )
+            return ( NSOrderedAscending );
+        if ( (void *)(__bridge   void *)(self) > (void *)(__bridge   void *)(obj) )
+            return ( NSOrderedDescending );
+        return ( NSOrderedSame );
 	}
 	
 	AQGridViewAnimatorItem * item = (AQGridViewAnimatorItem *) obj;

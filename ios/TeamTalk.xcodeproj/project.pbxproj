@@ -238,6 +238,7 @@
 		81B75A1E1A58CD830039E5B5 /* right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81B75A1C1A58CD830039E5B5 /* right@2x.png */; };
 		81B75A211A58CD8C0039E5B5 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = 81B75A1F1A58CD8C0039E5B5 /* left.png */; };
 		81B75A221A58CD8C0039E5B5 /* left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81B75A201A58CD8C0039E5B5 /* left@2x.png */; };
+		92FDC81ADFE4A42C83DEF472 /* libPods-TeamTalk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 118648B5847103BF744161F5 /* libPods-TeamTalk.a */; };
 		C46061D6194E9D8A00FF3966 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46061D5194E9D8A00FF3966 /* SystemConfiguration.framework */; };
 		C46061D8194E9D9300FF3966 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46061D7194E9D9300FF3966 /* MobileCoreServices.framework */; };
 		C485E8E719F78D800061DAFE /* FinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C485E8E519F78D800061DAFE /* FinderViewController.m */; };
@@ -391,8 +392,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19B78DA8A3707C0C507EF626 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		3EFE09922227481999813B37 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		118648B5847103BF744161F5 /* libPods-TeamTalk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TeamTalk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		166A2DC826FE3771EEA37049 /* Pods-TeamTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeamTalk/Pods-TeamTalk.release.xcconfig"; sourceTree = "<group>"; };
 		4C0C0F0A1A314E060094CCD2 /* SessionModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionModule.h; sourceTree = "<group>"; };
 		4C0C0F0B1A314E060094CCD2 /* SessionModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionModule.m; sourceTree = "<group>"; };
 		4C12E7F41A77920A00F1DD54 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
@@ -691,7 +692,6 @@
 		4CF7D527198A268500F0272B /* JSMessageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMessageTextView.m; sourceTree = "<group>"; };
 		4CFC9FB01A4412E3002E7A5A /* MsgReadNotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgReadNotify.h; sourceTree = "<group>"; };
 		4CFC9FB11A4412E3002E7A5A /* MsgReadNotify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MsgReadNotify.m; sourceTree = "<group>"; };
-		5C1C2E789271519490720734 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		81419D121A53EAD900E25D46 /* libPods-ProtocolBuffers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-ProtocolBuffers.a"; path = "Pods/build/Debug-iphoneos/libPods-ProtocolBuffers.a"; sourceTree = "<group>"; };
 		81B75A111A58CC090039E5B5 /* search_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search_bar.png; path = resources/search_bar.png; sourceTree = "<group>"; };
 		81B75A121A58CC090039E5B5 /* search_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "search_bar@2x.png"; path = "resources/search_bar@2x.png"; sourceTree = "<group>"; };
@@ -702,6 +702,7 @@
 		81B75A1C1A58CD830039E5B5 /* right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "right@2x.png"; path = "resources/right@2x.png"; sourceTree = "<group>"; };
 		81B75A1F1A58CD8C0039E5B5 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left.png; path = resources/left.png; sourceTree = "<group>"; };
 		81B75A201A58CD8C0039E5B5 /* left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "left@2x.png"; path = "resources/left@2x.png"; sourceTree = "<group>"; };
+		BA206DF10E3C48E6B4F96C7D /* Pods-TeamTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeamTalk/Pods-TeamTalk.debug.xcconfig"; sourceTree = "<group>"; };
 		C46061D5194E9D8A00FF3966 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C46061D7194E9D9300FF3966 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		C485E8E419F78D800061DAFE /* FinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinderViewController.h; sourceTree = "<group>"; };
@@ -1039,6 +1040,7 @@
 				C4EBA73A192F279100B72723 /* CoreGraphics.framework in Frameworks */,
 				C4EBA73C192F279100B72723 /* UIKit.framework in Frameworks */,
 				C4EBA738192F279100B72723 /* Foundation.framework in Frameworks */,
+				92FDC81ADFE4A42C83DEF472 /* libPods-TeamTalk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1343,15 +1345,6 @@
 				4CA6CE101A2C1F6E00405BB6 /* x@2x.png */,
 			);
 			name = resources;
-			sourceTree = "<group>";
-		};
-		A8257D727D24C0F620C5BCBC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5C1C2E789271519490720734 /* Pods.debug.xcconfig */,
-				19B78DA8A3707C0C507EF626 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		C485E8E319F78D380061DAFE /* Finder */ = {
@@ -2080,7 +2073,7 @@
 				4CB8F6BF19A6D97D00C4C27D /* IOSDuoduo Tests */,
 				C4EBA736192F279100B72723 /* Frameworks */,
 				4C1367ED194AF9440094E87D /* New Group */,
-				A8257D727D24C0F620C5BCBC /* Pods */,
+				EC563DA3765EC933D5A4B441 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2108,7 +2101,7 @@
 				C4EBA739192F279100B72723 /* CoreGraphics.framework */,
 				C4EBA73B192F279100B72723 /* UIKit.framework */,
 				C4EBA750192F279100B72723 /* XCTest.framework */,
-				3EFE09922227481999813B37 /* libPods.a */,
+				118648B5847103BF744161F5 /* libPods-TeamTalk.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2131,6 +2124,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EC563DA3765EC933D5A4B441 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA206DF10E3C48E6B4F96C7D /* Pods-TeamTalk.debug.xcconfig */,
+				166A2DC826FE3771EEA37049 /* Pods-TeamTalk.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2138,11 +2140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4EBA760192F279100B72723 /* Build configuration list for PBXNativeTarget "TeamTalk" */;
 			buildPhases = (
-				44527AFD008B1BB96DF27FA1 /* Check Pods Manifest.lock */,
+				6CEB1A41AC99E12651E5F5C8 /* [CP] Check Pods Manifest.lock */,
 				C4EBA730192F279100B72723 /* Sources */,
 				C4EBA731192F279100B72723 /* Frameworks */,
 				C4EBA732192F279100B72723 /* Resources */,
-				8EC339B25AFD447EA0F7C26C /* Copy Pods Resources */,
+				A49C933A9805AE3BBA7BEC7D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2164,7 +2166,8 @@
 				ORGANIZATIONNAME = "Michael Hu";
 				TargetAttributes = {
 					C4EBA733192F279100B72723 = {
-						DevelopmentTeam = 6U33YVLGCF;
+						DevelopmentTeam = DZY63VG7NR;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -2360,34 +2363,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		44527AFD008B1BB96DF27FA1 /* Check Pods Manifest.lock */ = {
+		6CEB1A41AC99E12651E5F5C8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeamTalk-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8EC339B25AFD447EA0F7C26C /* Copy Pods Resources */ = {
+		A49C933A9805AE3BBA7BEC7D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TeamTalk/Pods-TeamTalk-resources.sh",
+				"${PODS_ROOT}/MWPhotoBrowser/MWPhotoBrowser/MWPhotoBrowser.bundle",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MWPhotoBrowser.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamTalk/Pods-TeamTalk-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2705,12 +2714,14 @@
 		};
 		C4EBA761192F279100B72723 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C1C2E789271519490720734 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = BA206DF10E3C48E6B4F96C7D /* Pods-TeamTalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Scofield (RFN7CLVWTX)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DZY63VG7NR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2738,15 +2749,17 @@
 					"\"${PODS_ROOT}/leveldb-library/include\"",
 				);
 				INFOPLIST_FILE = "TeamTalk-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/security",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmrh.teamtalk;
 				PRODUCT_NAME = TeamTalk;
-				PROVISIONING_PROFILE = "09d5788e-c95b-4682-8363-e5dba92ce932";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -2754,12 +2767,14 @@
 		};
 		C4EBA762192F279100B72723 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19B78DA8A3707C0C507EF626 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 166A2DC826FE3771EEA37049 /* Pods-TeamTalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Scofield (RFN7CLVWTX)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DZY63VG7NR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2783,15 +2798,17 @@
 					"\"${PODS_ROOT}/leveldb-library/include\"",
 				);
 				INFOPLIST_FILE = "TeamTalk-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/security",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cmrh.teamtalk;
 				PRODUCT_NAME = TeamTalk;
-				PROVISIONING_PROFILE = "09d5788e-c95b-4682-8363-e5dba92ce932";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

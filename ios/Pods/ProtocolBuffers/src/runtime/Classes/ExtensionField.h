@@ -28,7 +28,7 @@
 - (PBWireFormat) wireType;
 - (BOOL) isRepeated;
 - (Class) extendedClass;
-- (id) defaultValue;
+- (instancetype) defaultValue;
 
 - (void) mergeFromCodedInputStream:(PBCodedInputStream*) input
                      unknownFields:(PBUnknownFieldSetBuilder*) unknownFields
@@ -40,4 +40,6 @@
 - (void) writeDescriptionOf:(id) value
                          to:(NSMutableString*) output
                  withIndent:(NSString*) indent;
+- (void) addDictionaryEntriesOf:(id) value
+                             to:(NSMutableDictionary*) dictionary;
 @end

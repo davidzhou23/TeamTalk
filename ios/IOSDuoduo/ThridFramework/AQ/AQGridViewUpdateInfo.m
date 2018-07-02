@@ -753,8 +753,10 @@
 	for ( AQGridViewAnimatorItem * item in newVisibleCells )
 	{
 		// only store real cells here
-		if ( [item.animatingView isKindOfClass: [AQGridViewCell class]] )
-			CFDictionaryAddValue( animatingCellTable, (void *)item.index, objc_unretainedPointer(item) );
+        if ( [item.animatingView isKindOfClass: [AQGridViewCell class]] ) {
+//            CFDictionaryAddValue( animatingCellTable, (void *)item.index, objc_unretainedPointer(item) );
+            CFDictionaryAddValue( animatingCellTable, (void *)item.index,  (__bridge void *)(item) );
+        }
 	}
 	
 	// a set of the indices (in old grid data) for all currently-known cells which are now or will become visible
@@ -773,8 +775,8 @@
 	for ( NSUInteger oldIndex = [movingSet firstIndex]; oldIndex != NSNotFound; oldIndex = [movingSet indexGreaterThanIndex: oldIndex] )
 	{
 		NSUInteger newIndex = _oldToNewIndexMap[oldIndex];
-		AQGridViewAnimatorItem * animatingItem = (AQGridViewAnimatorItem *)objc_unretainedObject(CFDictionaryGetValue( animatingCellTable, (void *)oldIndex ));
-		
+//        AQGridViewAnimatorItem * animatingItem = (AQGridViewAnimatorItem *)objc_unretainedObject(CFDictionaryGetValue( animatingCellTable, (void *)oldIndex ));
+		AQGridViewAnimatorItem * animatingItem = (AQGridViewAnimatorItem *)(__bridge id)(CFDictionaryGetValue( animatingCellTable, (void *)oldIndex ));
 		AQGridViewCell * cell = (AQGridViewCell *)animatingItem.animatingView;
 		if ( cell == nil )
 			cell = [_gridView cellForItemAtIndex: oldIndex];
@@ -832,7 +834,8 @@
 		{
 			if ( [oldVisibleIndices containsIndex: item.originalIndex] )
 			{
-				AQGridViewAnimatorItem * animatingItem = (AQGridViewAnimatorItem *)objc_unretainedObject(CFDictionaryGetValue( animatingCellTable, (void *)item.originalIndex ));
+//                AQGridViewAnimatorItem * animatingItem = (AQGridViewAnimatorItem *)objc_unretainedObject(CFDictionaryGetValue( animatingCellTable, (void *)item.originalIndex ));
+                AQGridViewAnimatorItem * animatingItem = (AQGridViewAnimatorItem *)(__bridge id)(CFDictionaryGetValue( animatingCellTable, (void *)item.originalIndex ));
 				
 				AQGridViewCell * deletingCell = (AQGridViewCell *)animatingItem.animatingView;
 				if ( deletingCell == nil )
@@ -877,8 +880,8 @@
 		if ( [newVisibleIndices containsIndex: item.index] == NO )
 			continue;
 		
-		AQGridViewAnimatorItem * animatingItem = (AQGridViewAnimatorItem *)objc_unretainedObject(CFDictionaryGetValue( animatingCellTable, (void *)item.originalIndex ));
-		
+//        AQGridViewAnimatorItem * animatingItem = (AQGridViewAnimatorItem *)objc_unretainedObject(CFDictionaryGetValue( animatingCellTable, (void *)item.originalIndex ));
+        AQGridViewAnimatorItem * animatingItem = (AQGridViewAnimatorItem *)(__bridge id)(CFDictionaryGetValue( animatingCellTable, (void *)item.originalIndex ));
 		AQGridViewCell * origCell = (AQGridViewCell *)animatingItem.animatingView;
 		if ( origCell == nil )
 			origCell = [_gridView cellForItemAtIndex: item.originalIndex];

@@ -3,7 +3,7 @@
 //  SCLAlertView
 //
 //  Created by Diogo Autilio on 9/26/14.
-//  Copyright (c) 2014 AnyKey Entertainment. All rights reserved.
+//  Copyright (c) 2014-2017 AnyKey Entertainment. All rights reserved.
 //
 
 #import "SCLAlertViewStyleKit.h"
@@ -22,6 +22,7 @@ static UIImage *imageOfNotice = nil;
 static UIImage *imageOfWarning = nil;
 static UIImage *imageOfInfo = nil;
 static UIImage *imageOfEdit = nil;
+static UIImage *imageOfQuestion = nil;
 
 #pragma mark - Initialization
 
@@ -49,7 +50,7 @@ static UIImage *imageOfEdit = nil;
     [checkmarkShapePath addCurveToPoint:CGPointMake(73.25, 14.05) controlPoint1: CGPointMake(75.52, 20.75) controlPoint2: CGPointMake(75.7, 16.65)];
     [checkmarkShapePath closePath];
     checkmarkShapePath.miterLimit = 4;
-
+    
     [[UIColor whiteColor] setFill];
     [checkmarkShapePath fill];
 }
@@ -65,7 +66,7 @@ static UIImage *imageOfEdit = nil;
     
     crossShapePath.lineCapStyle = kCGLineCapRound;
     crossShapePath.lineJoinStyle = kCGLineJoinRound;
-
+    
     [[UIColor whiteColor] setStroke];
     crossShapePath.lineWidth = 14;
     [crossShapePath stroke];
@@ -104,7 +105,7 @@ static UIImage *imageOfEdit = nil;
     [noticeShapePath addCurveToPoint:CGPointMake(72, 48.54) controlPoint1: CGPointMake(71.81, 51.29) controlPoint2: CGPointMake(72, 49.72)];
     [noticeShapePath closePath];
     noticeShapePath.miterLimit = 4;
-
+    
     [[UIColor whiteColor] setFill];
     [noticeShapePath fill];
 }
@@ -113,7 +114,7 @@ static UIImage *imageOfEdit = nil;
 {
     // Color Declarations
     UIColor *greyColor = [UIColor colorWithRed:0.236 green:0.236 blue:0.236 alpha:1.000];
-
+    
     // Warning Group
     // Warning Circle Drawing
     UIBezierPath *warningCirclePath = [[UIBezierPath alloc] init];
@@ -128,11 +129,11 @@ static UIImage *imageOfEdit = nil;
     [warningCirclePath addCurveToPoint:CGPointMake(40.94, 63.39) controlPoint1: CGPointMake(44.53, 64.18) controlPoint2: CGPointMake(42.83, 63.39)];
     [warningCirclePath closePath];
     warningCirclePath.miterLimit = 4;
-
+    
     [greyColor setFill];
     [warningCirclePath fill];
-
-
+    
+    
     //// Warning Shape Drawing
     UIBezierPath *warningShapePath = [[UIBezierPath alloc] init];
     [warningShapePath moveToPoint:CGPointMake(46.23, 4.26)];
@@ -148,7 +149,7 @@ static UIImage *imageOfEdit = nil;
     [warningShapePath addCurveToPoint:CGPointMake(46.23, 4.26) controlPoint1: CGPointMake(48.5, 7.01) controlPoint2: CGPointMake(47.74, 5.44)];
     [warningShapePath closePath];
     warningShapePath.miterLimit = 4;
-
+    
     [greyColor setFill];
     [warningShapePath fill];
 }
@@ -157,7 +158,7 @@ static UIImage *imageOfEdit = nil;
 {
     // Color Declarations
     UIColor *color0 = [UIColor colorWithRed:1.000 green:1.000 blue:1.000 alpha:1.000];
-
+    
     // Info Shape Drawing
     UIBezierPath *infoShapePath = [[UIBezierPath alloc] init];
     [infoShapePath moveToPoint:CGPointMake(45.66, 15.96)];
@@ -186,7 +187,7 @@ static UIImage *imageOfEdit = nil;
 {
     // Color Declarations
     UIColor *color = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
-
+    
     // Edit shape Drawing
     UIBezierPath *editPathPath = [[UIBezierPath alloc] init];
     [editPathPath moveToPoint:CGPointMake(71, 2.7)];
@@ -198,7 +199,7 @@ static UIImage *imageOfEdit = nil;
     [editPathPath addLineToPoint:CGPointMake(71, 2.7)];
     [editPathPath addLineToPoint:CGPointMake(71, 2.7)];
     [editPathPath closePath];
-                                                                                  
+    
     [editPathPath moveToPoint:CGPointMake(47.8, 13.5)];
     [editPathPath addLineToPoint:CGPointMake(13.4, 53.1)];
     [editPathPath addLineToPoint:CGPointMake(15.7, 55.1)];
@@ -206,7 +207,7 @@ static UIImage *imageOfEdit = nil;
     [editPathPath addLineToPoint:CGPointMake(47.8, 13.5)];
     [editPathPath addLineToPoint:CGPointMake(47.8, 13.5)];
     [editPathPath closePath];
-                                                                                  
+    
     [editPathPath moveToPoint:CGPointMake(17.7, 56.7)];
     [editPathPath addLineToPoint:CGPointMake(23.8, 62.2)];
     [editPathPath addLineToPoint:CGPointMake(58.2, 22.6)];
@@ -214,7 +215,7 @@ static UIImage *imageOfEdit = nil;
     [editPathPath addLineToPoint:CGPointMake(17.7, 56.7)];
     [editPathPath addLineToPoint:CGPointMake(17.7, 56.7)];
     [editPathPath closePath];
-                                                                                  
+    
     [editPathPath moveToPoint:CGPointMake(25.8, 63.8)];
     [editPathPath addLineToPoint:CGPointMake(60.1, 24.2)];
     [editPathPath addLineToPoint:CGPointMake(62.3, 26.1)];
@@ -222,17 +223,50 @@ static UIImage *imageOfEdit = nil;
     [editPathPath addLineToPoint:CGPointMake(25.8, 63.8)];
     [editPathPath addLineToPoint:CGPointMake(25.8, 63.8)];
     [editPathPath closePath];
-                                                                                  
+    
     [editPathPath moveToPoint:CGPointMake(25.9, 68.1)];
     [editPathPath addLineToPoint:CGPointMake(4.2, 79.5)];
     [editPathPath addLineToPoint:CGPointMake(11.3, 55.5)];
     [editPathPath addLineToPoint:CGPointMake(25.9, 68.1)];
     [editPathPath closePath];
-                                                                                  
+    
     editPathPath.miterLimit = 4;
     editPathPath.usesEvenOddFillRule = YES;
     [color setFill];
     [editPathPath fill];
+}
+
++ (void)drawQuestion
+{
+    // Color Declarations
+    UIColor *color = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+    
+    // Questionmark Shape Drawing
+    UIBezierPath *questionShapePath = [[UIBezierPath alloc] init];
+    [questionShapePath moveToPoint: CGPointMake(33.75, 54.1)];
+    [questionShapePath addLineToPoint: CGPointMake(44.15, 54.1)];
+    [questionShapePath addLineToPoint: CGPointMake(44.15, 47.5)];
+    [questionShapePath addCurveToPoint: CGPointMake(51.85, 37.2) controlPoint1: CGPointMake(44.15, 42.9) controlPoint2: CGPointMake(46.75, 41.2)];
+    [questionShapePath addCurveToPoint: CGPointMake(61.95, 19.9) controlPoint1: CGPointMake(59.05, 31.6) controlPoint2: CGPointMake(61.95, 28.5)];
+    [questionShapePath addCurveToPoint: CGPointMake(41.45, 2.8) controlPoint1: CGPointMake(61.95, 7.6) controlPoint2: CGPointMake(52.85, 2.8)];
+    [questionShapePath addCurveToPoint: CGPointMake(25.05, 5.8) controlPoint1: CGPointMake(34.75, 2.8) controlPoint2: CGPointMake(29.65, 3.8)];
+    [questionShapePath addLineToPoint: CGPointMake(25.05, 14.4)];
+    [questionShapePath addCurveToPoint: CGPointMake(38.15, 12.3) controlPoint1: CGPointMake(29.15, 13.2) controlPoint2: CGPointMake(32.35, 12.3)];
+    [questionShapePath addCurveToPoint: CGPointMake(49.65, 20.8) controlPoint1: CGPointMake(45.65, 12.3) controlPoint2: CGPointMake(49.65, 14.4)];
+    [questionShapePath addCurveToPoint: CGPointMake(43.65, 31.7) controlPoint1: CGPointMake(49.65, 26) controlPoint2: CGPointMake(47.95, 28.4)];
+    [questionShapePath addCurveToPoint: CGPointMake(33.75, 46.6) controlPoint1: CGPointMake(37.15, 36.9) controlPoint2: CGPointMake(33.75, 39.7)];
+    [questionShapePath addLineToPoint: CGPointMake(33.75, 54.1)];
+    [questionShapePath closePath];
+    
+    [questionShapePath moveToPoint: CGPointMake(33.15, 75.4)];
+    [questionShapePath addLineToPoint: CGPointMake(45.35, 75.4)];
+    [questionShapePath addLineToPoint: CGPointMake(45.35, 63.7)];
+    [questionShapePath addLineToPoint: CGPointMake(33.15, 63.7)];
+    [questionShapePath addLineToPoint: CGPointMake(33.15, 75.4)];
+    [questionShapePath closePath];
+    
+    [color setFill];
+    [questionShapePath fill];
 }
 
 #pragma mark - Images
@@ -243,12 +277,12 @@ static UIImage *imageOfEdit = nil;
     {
         return imageOfCheckmark;
     }
-
+    
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(80, 80), NO, 0);
     [SCLAlertViewStyleKit drawCheckmark];
     imageOfCheckmark = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-
+    
     return imageOfCheckmark;
 }
 
@@ -259,12 +293,12 @@ static UIImage *imageOfEdit = nil;
     {
         return imageOfCross;
     }
-
+    
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(80, 80), NO, 0);
     [SCLAlertViewStyleKit drawCross];
     imageOfCross = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-
+    
     return imageOfCross;
 }
 
@@ -274,12 +308,12 @@ static UIImage *imageOfEdit = nil;
     {
         return imageOfNotice;
     }
-
+    
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(80, 80), NO, 0);
     [SCLAlertViewStyleKit drawNotice];
     imageOfNotice = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-
+    
     return imageOfNotice;
 }
 
@@ -289,12 +323,12 @@ static UIImage *imageOfEdit = nil;
     {
         return imageOfWarning;
     }
-
+    
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(80, 80), NO, 0);
     [SCLAlertViewStyleKit drawWarning];
     imageOfWarning = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-
+    
     return imageOfWarning;
 }
 
@@ -304,12 +338,12 @@ static UIImage *imageOfEdit = nil;
     {
         return imageOfInfo;
     }
-
+    
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(80, 80), NO, 0);
     [SCLAlertViewStyleKit drawInfo];
     imageOfInfo = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-
+    
     return imageOfInfo;
 }
 
@@ -326,6 +360,21 @@ static UIImage *imageOfEdit = nil;
     UIGraphicsEndImageContext();
     
     return imageOfEdit;
+}
+
++ (UIImage*)imageOfQuestion
+{
+    if (imageOfQuestion != nil)
+    {
+        return imageOfQuestion;
+    }
+    
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(80, 80), NO, 0);
+    [SCLAlertViewStyleKit drawQuestion];
+    imageOfQuestion = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return imageOfQuestion;
 }
 
 @end

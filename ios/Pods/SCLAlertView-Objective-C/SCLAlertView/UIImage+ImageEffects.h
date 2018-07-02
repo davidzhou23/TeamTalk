@@ -1,7 +1,7 @@
 /*
-     File: UIImage+ImageEffects.h
+ File: UIImage+ImageEffects.h
  Abstract: This is a category of UIImage that adds methods to apply blur and tint effects to an image. This is the code you’ll want to look out to find out how to use vImage to efficiently calculate a blur.
-  Version: 1.0
+ Version: 1.0
  
  Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple
  Inc. ("Apple") in consideration of your agreement to the following
@@ -93,7 +93,11 @@
  5/3/2013
  */
 
+#if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+#else
+#import <UIKit/UIKit.h>
+#endif
 
 @interface UIImage (ImageEffects)
 
@@ -106,4 +110,6 @@
 
 + (UIImage *)imageWithColor:(UIColor *)color;
 + (UIImage *)convertViewToImage;
++ (UIImage *)convertViewToImage:(UIView *)view;
+
 @end

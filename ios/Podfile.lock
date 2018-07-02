@@ -20,51 +20,65 @@ PODS:
   - AFNetworking/UIKit (2.3.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - DACircularProgress (2.2.0)
-  - FMDB (2.4):
-    - FMDB/standard (= 2.4)
-  - FMDB/common (2.4)
-  - FMDB/standard (2.4):
-    - FMDB/common
+  - DACircularProgress (2.3.1)
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
   - HPGrowingTextView (1.1)
-  - leveldb-library (1.18.1)
-  - MBProgressHUD (0.9)
+  - leveldb-library (1.20)
+  - MBProgressHUD (0.9.2)
   - MWPhotoBrowser (1.4.1):
     - DACircularProgress
     - MBProgressHUD (~> 0.8)
     - PSTCollectionView (~> 1.2)
     - SDWebImage (~> 3.7)
-  - ProtocolBuffers (1.9.3)
+  - ProtocolBuffers (1.9.11)
   - PSTCollectionView (1.2.3)
-  - SCLAlertView-Objective-C (0.3.7)
-  - SDWebImage (3.7.1):
-    - SDWebImage/Core (= 3.7.1)
-  - SDWebImage/Core (3.7.1)
+  - SCLAlertView-Objective-C (1.1.5)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.3.0)
-  - DACircularProgress (~> 2.2.0)
-  - FMDB (~> 2.3)
-  - HPGrowingTextView (~> 1.1)
-  - leveldb-library (~> 1.18.1)
-  - MBProgressHUD (~> 0.8)
+  - DACircularProgress
+  - FMDB
+  - HPGrowingTextView
+  - leveldb-library
+  - MBProgressHUD
   - MWPhotoBrowser (~> 1.4.1)
-  - ProtocolBuffers (= 1.9.3)
-  - PSTCollectionView (~> 1.2.1)
-  - SCLAlertView-Objective-C (~> 0.3.7)
-  - SDWebImage (~> 3.6)
+  - ProtocolBuffers
+  - PSTCollectionView
+  - SCLAlertView-Objective-C
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - DACircularProgress
+    - FMDB
+    - HPGrowingTextView
+    - leveldb-library
+    - MBProgressHUD
+    - MWPhotoBrowser
+    - ProtocolBuffers
+    - PSTCollectionView
+    - SCLAlertView-Objective-C
+    - SDWebImage
 
 SPEC CHECKSUMS:
-  AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
-  DACircularProgress: 3b41941891a56dc6aa17971f5322a9a38a6f446e
-  FMDB: 0b2fa25e5264ef177973c0cb8c02c711107979aa
-  HPGrowingTextView: 07d5ab1f1e867acfb7a6f498b819948c9e97d07c
-  leveldb-library: 27d1c7bf65f324cc6f57e06fa9be32f02ac2b700
-  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
-  MWPhotoBrowser: be05b3b7521e961382a4ba5579685bf5a00b93d8
-  ProtocolBuffers: e80f9e4fc401aec9d3c30be70db87fcd5f1cb880
-  PSTCollectionView: d9f466e4554cc83260ca9bde7beb27f308e8fd76
-  SCLAlertView-Objective-C: 0f05aadaf5388ec44a06a4271e99cd871830246a
-  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  AFNetworking: 05b9f6e3aa5ac45bc383b4bb108ef338080a26c7
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MWPhotoBrowser: 2531e682860d62b8a7ba8659de02eb9040e431e5
+  ProtocolBuffers: d509225eb2ea43d9582a59e94348fcf86e2abd65
+  PSTCollectionView: 6749df92885353521f55279a7ce2b293762e2be4
+  SCLAlertView-Objective-C: 69c8932c332ce61ee9e693379451e2c0b09fb307
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-COCOAPODS: 0.35.0
+PODFILE CHECKSUM: bd8e8de72fc0c676f6d175a14d477c8bad71b110
+
+COCOAPODS: 1.5.3

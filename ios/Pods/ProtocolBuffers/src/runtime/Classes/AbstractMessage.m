@@ -21,7 +21,7 @@
 
 @implementation PBAbstractMessage
 
-- (id) init {
+- (instancetype) init {
   if ((self = [super init])) {
   }
 
@@ -59,7 +59,7 @@
 }
 
 
-- (id<PBMessage>) defaultInstance {
+- (instancetype) defaultInstance {
   @throw [NSException exceptionWithName:@"ImproperSubclassing" reason:@"" userInfo:nil];
 }
 
@@ -89,6 +89,14 @@
   NSMutableString* output = [NSMutableString string];
   [self writeDescriptionTo:output withIndent:@""];
   return output;
+}
+
+- (void) storeInDictionary: (NSMutableDictionary *) dic {
+  @throw [NSException exceptionWithName:@"ImproperSubclassing" reason:@"" userInfo:nil];
+}
+
+- (NSDictionary *) dictionaryRepresentation {
+  @throw [NSException exceptionWithName:@"ImproperSubclassing" reason:@"" userInfo:nil];
 }
 
 

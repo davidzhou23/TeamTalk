@@ -48,7 +48,7 @@ static PBUnknownFieldSet* defaultInstance = nil;
 }
 
 
-- (id) initWithFields:(NSMutableDictionary*) fields_ {
+- (instancetype) initWithFields:(NSMutableDictionary*) fields_ {
   if ((self = [super init])) {
     self.fields = fields_;
   }
@@ -98,6 +98,10 @@ static PBUnknownFieldSet* defaultInstance = nil;
   }
 }
 
+- (void) storeInDictionary: (NSMutableDictionary *) dic;
+{
+    //TODO: Ignore unknown field sets for now :D
+}
 
 + (PBUnknownFieldSet*) parseFromCodedInputStream:(PBCodedInputStream*) input {
   return [[[PBUnknownFieldSet builder] mergeFromCodedInputStream:input] build];
